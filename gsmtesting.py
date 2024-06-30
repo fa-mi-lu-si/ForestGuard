@@ -35,7 +35,6 @@ def test_connection():
 
 def data_to_thingspeak():
     # send an http request like
-    # GET https://api.thingspeak.com/update?api_key=PNXN1L9PXOGYJ1LJ&field1=0
     send_at_command("AT+HTTPINIT")
     send_at_command('AT+HTTPPARA="CID",1')
     send_at_command(
